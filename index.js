@@ -12,7 +12,7 @@ const questions = [{
     name: 'github',
   message: 'WHEN I enter my GitHub username',} 
   ,{ type: 'list',
-    name: 'licence',
+    name: 'license',
     message: 'What is the licence that you use',
     choices: ['MIT', 'BSD 3', 'GPL 3', 'ISC', 'Apache 2.0', 'Unlicense', 'N/A'], } 
  ,{ type: 'input',
@@ -29,7 +29,7 @@ const questions = [{
     name: 'usage',
     message: 'how did you use the appliance',}
    ,{ type: 'input',
-    name: 'contribue',
+    name: 'contributing',
      message: 'how did you contribute',}
      ,{ type: 'input',
       name: 'test',
