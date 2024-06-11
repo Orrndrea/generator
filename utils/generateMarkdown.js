@@ -3,27 +3,27 @@
 function renderLicenseBadge(license) {
   if (license === "MIT") {
   badge =
-    "!License: MIT";
+    "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
 }
 if (license === "BSD") {
   badge =
-    "!License";
+    "![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)";
 }
 if (license === "GPL") {
   badge =
-    "!License: GPL v3";
+    "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
 }
 if (license === "ISC") {
   badge =
-    "!License: ISC";
+    "![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)";
 }
 if (license === "Apache") {
   badge =
-    "!License";
+    "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
 }
 if (license === "Unlicense") {
   badge =
-    "!License: Unlicense";
+    "![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)";
 } else if (license === "N/A") {
   badge = "";
 }

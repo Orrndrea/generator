@@ -11,7 +11,7 @@ const questions = [{
   },{ type: 'input',
     name: 'github',
   message: 'WHEN I enter my GitHub username',} 
-  ,{ type: 'input',
+  ,{ type: 'list',
     name: 'licence',
     message: 'What is the licence that you use',
     options: ['MIT', 'BSD 3', 'GPL 3', 'ISC', 'Apache 2.0', 'Unlicense', 'N/A'], } 
