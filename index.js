@@ -14,7 +14,7 @@ const questions = [{
   ,{ type: 'list',
     name: 'licence',
     message: 'What is the licence that you use',
-    options: ['MIT', 'BSD 3', 'GPL 3', 'ISC', 'Apache 2.0', 'Unlicense', 'N/A'], } 
+    choices: ['MIT', 'BSD 3', 'GPL 3', 'ISC', 'Apache 2.0', 'Unlicense', 'N/A'], } 
  ,{ type: 'input',
    name: 'title',
    message: 'What is the title',}
