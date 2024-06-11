@@ -1028,7 +1028,49 @@ limitations under the License.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
 
+  ## Description
+    ${data.description}
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+To install necessary dependencies, run the following command:
+
+[${data.installation}] 
+
+## Usage
+
+${data.usage}
+
+## License
+
+${renderLicenseSection(data.license, data)}
+
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+To run tests, run the following command:
+
+[${data.test}] 
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at ${
+data.email}. You can find more of my work at [${data.github}](https://github.com/${
+data.github}/).
 `;
 }
 

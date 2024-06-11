@@ -50,7 +50,14 @@ function writeToFile(fileName, data) {function writeToFile(fileName, data) {
 } }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function(inquirerResponses) {
+    console.log('Creating README...');
+    const title = inquirerResponses.title;
+    console.log('Title:', title);
+    writeToFile(`${title}.md`, generateMarkdown({ ...inquirerResponses, title }));
+  });  
+}
 
 // Function call to initialize app
 init();
